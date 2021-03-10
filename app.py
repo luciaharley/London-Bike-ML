@@ -57,7 +57,6 @@ def prediction(timestamp, t1, t2, hum, wind_speed, weather_code, is_holiday, wee
     df = pd.DataFrame(columns=['timestamp', 't1', 't2', 'hum', 'wind_speed', 'weather_code',
        'is_holiday', 'is_weekend', 'season'])
     df.loc[0] = [timestamp, t1, t2, hum, wind_speed, weather_code, is_holiday, weekend, season]
-    print(df)
     prediction = pipe.predict(df) 
     return math.floor(prediction[0])
       
@@ -90,7 +89,6 @@ def main():
     if st.button("Predict"): 
         result = prediction(timestamp, t1, t2, hum, wind_speed, weather_code, is_holiday, weekend, season)
         st.success('The model predicts that {} bikes will be rented in London on this day!'.format(result))
-        print('hi')
      
 if __name__=='__main__': 
     main()

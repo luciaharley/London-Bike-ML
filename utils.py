@@ -34,4 +34,3 @@ target=pd.DataFrame({'hour': [0], 'day_of_month': [2], 'day_of_week': [1], 'mont
 
 X_split =  split_dates(X) 
 pd.testing.assert_frame_equal(X_split, target)
-    
