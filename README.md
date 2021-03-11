@@ -11,5 +11,7 @@ To run app.py:
   `conda activate ml`
 3. run app
   `streamlit run app.py`
+  
+Note -- the app will throw version errors if not using the latest version of scikit-learn (0.23.0). Using the ml environment will handle this, but if you get a "sklearn object does not have attribute xyz" error on prediction, check if your packages are updated.
 
 This project is for MSDS699 - Machine Learning Laboratory, in partial fulfillment of the MS in Data Science degree at the University of San Francisco.
