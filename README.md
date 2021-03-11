@@ -12,6 +12,8 @@ To run app.py:
 3. run app
   `streamlit run app.py`
   
-Note -- the app will throw version errors if not using the latest version of scikit-learn (0.23.0). Using the ml environment will handle this, but if you get a "sklearn object does not have attribute xyz" error on prediction, check if your packages are updated.
+Note: app.py will throw errors if not using the latest version of scikit-learn (0.23.0). Using the ml environment will handle this, but if you get a "sklearn object does not have attribute xyz" error on prediction, check if your packages are updated.
+
+There is an "Add to Colab" button in the notebook for browsing convenience, but note that utils.py must also be added to Colab for imports to run. I recommend cloning the repository and opening the whole folder in Colab.
 
 This project is for MSDS699 - Machine Learning Laboratory, in partial fulfillment of the MS in Data Science degree at the University of San Francisco.
